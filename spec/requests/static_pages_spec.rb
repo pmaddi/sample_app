@@ -15,7 +15,6 @@ describe "Static pages" do
     let(:page_title) { '' }
 
     it_should_behave_like "all static pages"
-    it { should_not have_title('| Home') }
   end
 
   describe "Help page" do
@@ -24,7 +23,6 @@ describe "Static pages" do
     let(:page_title) { 'Help' }
 
     it_should_behave_like "all static pages"
-    it { should_not have_title('| Help') }
   end
 
   describe "About page" do
@@ -33,7 +31,6 @@ describe "Static pages" do
     let(:page_title) { 'About Us' }
 
     it_should_behave_like "all static pages"
-    it { should_not have_title('| About Us') }
   end
 
   describe "Contact page" do
@@ -42,6 +39,5 @@ describe "Static pages" do
     let(:page_title) { 'Contact' }
 
     it_should_behave_like "all static pages"
-    it { should_not have_title('| Contact') }
   end
 end
